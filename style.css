@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff8f0; /* Light orangish background */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  background-color: #ffa94d; /* Soft orange */
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffedcc;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+  color: #ff7b00; /* Deep orange headings */
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  text-align: justify;
+}
+
+/* Button Styling */
+button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e07b00;
+}
+
+/* Hidden Class */
+.hidden {
+  display: none;
+}
+
+/* Project/Details Box */
+#expertiseDetails,
+#projectDetails,
+#expDetails,
+#eduDetails,
+#certDetails,
+#opDetails {
+  background-color: #fff3e0; /* Very light orange */
+  padding: 20px;
+  border-radius: 19px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #ffe0b2;
+  padding: 40px 20px;
+  border-top: 2px solid #ff9900;
+  text-align: left; /* <-- Shift text to left */
+  max-width: 1850px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  margin-bottom: 01px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.profile-pic {
+  width: 150px; /* Size can be adjusted */
+  height: 150px;
+  border-radius: 50%; /* Makes it round */
+  object-fit: cover; /* Keeps the image inside circle without stretching */
+  display: block;
+  margin: 0 auto 20px auto; /* Center horizontally + some space below */
+  border: 3px solid #ff9900; /* Optional: nice border */
+}

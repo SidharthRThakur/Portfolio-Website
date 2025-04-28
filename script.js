@@ -14,15 +14,15 @@ const certDetails = document.getElementById("certDetails");
 const showOpBtn = document.getElementById("showOpBtn");
 const opDetails = document.getElementById("opDetails");
 
-I have
-Add click event to the button
+// I have
+// Add click event to the button
 showExpertiseBtn.addEventListener("click", function () {
   expertiseDetails.classList.toggle("hidden");
 });
 showProjectBtn.addEventListener("click", function () {
   projectDetails.classList.toggle("hidden");
 });
-    showExpBtn.addEventListener("click", function () {
+showExpBtn.addEventListener("click", function () {
   expDetails.classList.toggle("hidden");
 });
 showEduBtn.addEventListener("click", function () {
